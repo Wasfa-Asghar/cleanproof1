@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ProductDetailSections } from "@/components/marketing/product-detail-sections";
 import type { Metadata } from "next";
 import { PricingCards } from "@/components/marketing/pricing-cards";
@@ -69,7 +70,14 @@ export default function PricingPage() {
             </table>
           </div>
           <p className="mt-6 text-center text-xs leading-relaxed text-[var(--cp-ink-subtle)]">
-            Prices are per month in GBP. VAT is added where it applies.
+            Prices are per month in GBP. VAT is added where it applies.{" "}
+            <Link href="/refund-policy" className="underline underline-offset-2 hover:text-[var(--cp-navy)]">
+              Refund &amp; cancellation
+            </Link>
+            {" · "}
+            <Link href="/subscription-terms" className="underline underline-offset-2 hover:text-[var(--cp-navy)]">
+              Subscription terms
+            </Link>
           </p>
         </div>
       </section>
@@ -105,7 +113,7 @@ export default function PricingPage() {
                   key: "cancel",
                   title: "Can I cancel?",
                   body: "Cancel from the billing page. Your plan stays active until the month you paid for ends.",
-                  href: "/subscription-terms",
+                  href: "/refund-policy",
                   glyph: "▤",
                 },
               ]}

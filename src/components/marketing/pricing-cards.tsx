@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { getPublicPlanCards, TRIAL_COPY } from "@/lib/marketing/plans-display";
 
@@ -54,7 +55,14 @@ export function PricingCards({ compact }: { compact?: boolean }) {
       <div className="mt-6 space-y-3 text-sm text-[var(--cp-muted)]">
         <p>{TRIAL_COPY.note}</p>
         <p className="text-xs leading-relaxed text-[var(--cp-ink-subtle)]">
-          Prices are in pounds sterling per month and may be subject to VAT. Payments are taken securely online. Cancel any time from the billing page.
+          Prices are in pounds sterling per month and may be subject to VAT. Payments are taken securely online. Cancel any time from the billing page.{" "}
+          <Link href="/refund-policy" className="underline underline-offset-2 hover:text-[var(--cp-navy)]">
+            Refund &amp; cancellation
+          </Link>
+          {" · "}
+          <Link href="/subscription-terms" className="underline underline-offset-2 hover:text-[var(--cp-navy)]">
+            Subscription terms
+          </Link>
         </p>
       </div>
     </div>

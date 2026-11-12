@@ -20,6 +20,7 @@ const footerGroups = [
       { href: "/contact", label: "Contact" },
       { href: "/industries", label: "Industries" },
       { href: "/help", label: "Help centre" },
+      { href: "/security", label: "Security" },
     ],
   },
   {
@@ -28,7 +29,11 @@ const footerGroups = [
       { href: "/privacy-policy", label: "Privacy" },
       { href: "/terms", label: "Terms" },
       { href: "/cookie-policy", label: "Cookies" },
+      { href: "/refund-policy", label: "Refund & cancellation" },
       { href: "/subscription-terms", label: "Subscriptions" },
+      { href: "/acceptable-use", label: "Acceptable use" },
+      { href: "/data-processing-agreement", label: "DPA" },
+      { href: "/security", label: "Security" },
     ],
   },
 ];
